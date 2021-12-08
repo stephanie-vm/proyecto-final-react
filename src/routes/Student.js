@@ -12,7 +12,7 @@ const Student = () => {
         fetch(`${process.env.REACT_APP_API_URL}student/${id}`, {
         method: 'GET',
         headers: {
-            'x-hasura-admin-secret': process.env.REACT_APP_HASURA_SECRET
+            'x-hasura-admin-secret': `${process.env.REACT_APP_HASURA_SECRET}`
         }
         }).then(response => response.json())
         .then(result => {
