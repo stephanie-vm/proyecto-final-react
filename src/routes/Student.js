@@ -9,7 +9,7 @@ const Student = () => {
     const params = useParams()
 
     const getStudentById = (id) => {
-        fetch(`${process.env.REACT_APP_API_URL}student/${id}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/student/${id}`, {
         method: 'GET',
         headers: {
             'x-hasura-admin-secret': `${process.env.REACT_APP_HASURA_SECRET}`
